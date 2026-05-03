@@ -10,9 +10,11 @@
     <!--Aca Metí los enlaces de navegación-->
     <nav>
         <a href="inicio.jsp">Inicio</a>
-        <a href="AgregarSeguro.jsp">Agregar Seguro</a>  
+        <a href="AgregarSeguro.jsp">Agregar Seguro</a>
         <a href="ListarSeguros.jsp">Listar Seguros</a>
     </nav>
-    
+
+    <h1>Soy la página inicio</h1>
+
 </body>
 </html>
