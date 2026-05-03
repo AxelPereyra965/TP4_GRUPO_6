@@ -13,7 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/alejo/Desktop/Repo_SegurosGroup/mysql-connector-java-5.1.47-bin.jar">
+	<classpathentry kind="lib" path="D:/Documentos/UTN FRGP JOEL/Materias Tup PLAN 2024/Programacion 4 Plan 2024/WEB/Versiones Locales/TP4_GRUPO_6_v2/TP4_GRUPO_6_v2/mysql-connector-java-5.1.47-bin.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
