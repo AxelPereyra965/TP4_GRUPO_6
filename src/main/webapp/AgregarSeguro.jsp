@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="dominio.TipoSeguro" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +24,25 @@
 
         <label for="descripcion">Descripción:</label><br>
         <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <label for="idTipo">Tipo de Seguro:</label>
+        <select id="idTipo" name="idTipo">
+            <%
+                ArrayList<TipoSeguro> listaTipos = (ArrayList<TipoSeguro>) request.getAttribute("listaTipos");
+                if (listaTipos != null) 
+                {
+                    for (TipoSeguro ts : listaTipos) 
+                    {
+            %>
+                        <option value="<%= ts.getIdTipo() %>"><%= ts.getDescripcion() %></option>
+            <%
+                    }
+                }
+            %>
+        </select>
+        <br><br>
+
     </form>
 
 </body>

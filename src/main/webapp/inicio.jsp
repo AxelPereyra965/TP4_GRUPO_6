@@ -10,7 +10,7 @@
     <!--Aca Metí los enlaces de navegación-->
     <nav>
         <a href="inicio.jsp">Inicio</a>
-        <a href="AgregarSeguro.jsp">Agregar Seguro</a>
+        <a href="AgregarSeguroServlet">Agregar Seguro</a>
         <a href="ListarSeguros.jsp">Listar Seguros</a>
     </nav>
 
