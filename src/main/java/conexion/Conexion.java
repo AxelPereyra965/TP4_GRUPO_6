@@ -11,8 +11,8 @@ public class Conexion
 	
     private static final String URL    = "jdbc:mysql://localhost:3306/SegurosGroup";
     private static final String USUARIO = "root";
-    private static final String CLAVE   = "";
-    private static final String DRIVER  = "com.mysql.cj.jdbc.Driver";
+    private static final String CLAVE   = "root";
+    private static final String DRIVER  = "com.mysql.jdbc.Driver";
 
     /**
      * Devuelve una conexión activa a la base de datos SegurosGroup.
