@@ -17,5 +17,13 @@
         <servlet-name>InicioServlet</servlet-name>
         <url-pattern>/InicioServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+    <servlet-name>AgregarSeguroServlet</servlet-name>
+    <servlet-class>servlets.AgregarSeguroServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AgregarSeguroServlet</servlet-name>
+    <url-pattern>/AgregarSeguroServlet</url-pattern>
+</servlet-mapping>
 
 </web-app>
