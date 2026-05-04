@@ -18,6 +18,10 @@
     <form action="AgregarSeguroServlet" method="post">
         <label for="idSeguro">Id Seguro:</label>
         <input type="text" id="idSeguro" name="idSeguro" value="1" disabled>
+        <br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
     </form>
 
 </body>
