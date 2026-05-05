@@ -52,7 +52,12 @@
        			placeholder="0.00" 
        			required>
 		<br><br>
-		
+
+       <label for="sumaAsegurada">Costo Máximo Asegurado:</label>
+       <input type="text" id="sumaAsegurada" name="sumaAsegurada">
+       <br><br>
+       
+       <input type="submit" value="Aceptar">
     </form>
 
 </body>
