@@ -42,7 +42,17 @@
             %>
         </select>
         <br><br>
-
+        
+        <label for="costo">Costo contratación:</label>
+		<input type="number" 
+       			id="costo" 
+       			name="txtCosto" 
+       			step="0.01" 
+       			min="0" 
+       			placeholder="0.00" 
+       			required>
+		<br><br>
+		
     </form>
 
 </body>

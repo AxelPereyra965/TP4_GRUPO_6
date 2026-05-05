@@ -27,6 +27,19 @@ public class AgregarSeguroServlet extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-        doGet(request, response);
+        
+        String costoStr = request.getParameter("txtCosto");
+        double costoContratacion = 0.0;
+        
+        try {
+            
+            if (costoStr != null && !costoStr.isEmpty()) {
+                costoContratacion = Double.parseDouble(costoStr);
+            }
+
+        } catch (NumberFormatException e) {
+            
+            System.out.println("Error: El valor recibido no es un número válido.");
+        }
     }
 }
