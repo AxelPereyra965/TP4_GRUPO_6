@@ -11,7 +11,7 @@
         TipoSeguroDAO tipoDAO = new TipoSeguroDAO();
         listaTipos = tipoDAO.obtenerTodos();
     } catch (Exception e) {
-        // queda vacío
+
     }
 
 
@@ -77,13 +77,14 @@
         <input type="submit" value="Filtrar">
     </form>
 
-
     <table>
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Descripción Seguro</th>
                 <th>Descripción Tipo Seguro</th>
+                <th>Costo Contratación</th>
+                <th>Costo Máximo Asegurado</th>
             </tr>
         </thead>
         <tbody>
@@ -91,7 +92,7 @@
                 if (listaSeguros.isEmpty()) {
             %>
                 <tr>
-                    <td colspan="3">Sin resultados</td>
+                    <td colspan="5">Sin resultados</td>
                 </tr>
             <%
                 } else {
@@ -108,6 +109,8 @@
                     <td><%= s.getId() %></td>
                     <td><%= s.getDescripcion() %></td>
                     <td><%= tipoDesc %></td>
+                    <td><%= String.format("%.2f", s.getCostoContratacion()) %></td>
+                    <td><%= String.format("%.2f", s.getSumaAsegurada()) %></td>
                 </tr>
             <%
                     }
